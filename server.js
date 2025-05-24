@@ -2,6 +2,10 @@ import express from 'express'
 
 const app = express();
 
+app.use(express.json())
+
+// app.use('/', urlRoute);
+
 // Basic route for testing
 app.get('/', (req, res) => {
   res.json({ message: 'Welcome to URL Shortener API' });
