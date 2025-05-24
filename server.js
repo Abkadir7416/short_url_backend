@@ -12,6 +12,7 @@ dotenv.config();
 // Connect to MongoDB
 connectDB();
 
+
 // Routes
 app.use('/api', shortUrlRoutes);
 // Basic route for testing
