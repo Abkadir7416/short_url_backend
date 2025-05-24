@@ -13,12 +13,6 @@ dotenv.config();
 // Connect to MongoDB
 connectDB();
 
-// Basic route for testing
-app.get('/', (req, res) => {
-  res.json({ message: 'Welcome to URL Shortener API' });
-});
-
-
 // Routes
 app.use('/api', shortUrlRoutes);
 
