@@ -1,10 +1,16 @@
 import express from 'express'
+import connectDB from './config/mongo.config.js'
+import dotenv from 'dotenv';
 
 const app = express();
 
 app.use(express.json())
 
-// app.use('/', urlRoute);
+// Load environment variables
+dotenv.config();
+
+// Connect to MongoDB
+connectDB();
 
 // Basic route for testing
 app.get('/', (req, res) => {
