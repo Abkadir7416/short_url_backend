@@ -1,16 +1,10 @@
 import express from 'express'
-import connectDB from './config/mongo.config.js'
-import dotenv from 'dotenv';
 
 const app = express();
 
 app.use(express.json())
 
-// Load environment variables
-dotenv.config();
-
-// Connect to MongoDB
-connectDB();
+// app.use('/', urlRoute);
 
 
 // Routes
